@@ -14,6 +14,16 @@ export default function Navbar() {
             Posts
           </Link>
         </li>
+        <li className="nav_item">
+          <Link className="nav_link" to={"/login"}>
+            Login
+          </Link>
+        </li>
+        <li className="nav_item">
+          <Link className="nav_link" to={"/register"}>
+            Register
+          </Link>
+        </li>
       </ul>
     </nav>
   );
