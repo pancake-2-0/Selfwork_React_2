@@ -3,6 +3,9 @@ import Homepage from "../views/Homepage";
 import Layout from "../components/Layout";
 import Posts from "../views/Posts";
 import Details from "../views/Details";
+import Login from "../views/Login";
+import Register from "../views/Register";
+import { postsLoader, postDetailLoader } from "./loader";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +25,14 @@ const router = createBrowserRouter([
         path: "/posts/:id",
         Component: Details,
         loader: postDetailLoader,
+      },
+      {
+        path: "/login",
+        Component: Login,
+      },
+      {
+        path: "/register",
+        Component: Register,
       },
     ],
   },
