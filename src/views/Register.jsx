@@ -27,28 +27,41 @@ export default function Register() {
 
   return (
     <>
-      <h1>Register</h1>
-      <form onSubmit={handlesubmit}>
-        <div>
-          <label htmlFor="register-name">Nome</label>
+      <form
+        onSubmit={handlesubmit}
+        className="flex justify-center items-center h-screen"
+      >
+        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
+          <legend className="fieldset-legend">Register</legend>
+
+          <label className="label" htmlFor="register-name">
+            Name
+          </label>
           <input
             id="register-name"
             type="text"
+            className="input"
+            placeholder="Name"
             onChange={handleChange}
             name="name"
           />
-        </div>
-        <div>
-          <label htmlFor="register-email">Email</label>
+
+          <label className="label" htmlFor="register-email">
+            Email
+          </label>
           <input
             id="register-email"
             type="email"
+            className="input"
+            placeholder="Email"
             onChange={handleChange}
             name="email"
           />
-        </div>
 
-        <button type="submit">Register</button>
+          <button type="submit" className="btn btn-neutral mt-4">
+            Register
+          </button>
+        </fieldset>
       </form>
     </>
   );

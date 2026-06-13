@@ -5,10 +5,13 @@ export default function Detail() {
 
   return (
     <>
-      <h1>Detail</h1>
-      <div>
-        <h2>{post.title}</h2>
-        <p>{post.body}</p>
+      <div className="flex justify-center items-center h-screen">
+        <div className=" card bg-neutral text-neutral-content w-96">
+          <div className="card-body items-center text-center">
+            <h2 className="card-title">{post.title}</h2>
+            <p>{post.body}</p>
+          </div>
+        </div>
       </div>
     </>
   );

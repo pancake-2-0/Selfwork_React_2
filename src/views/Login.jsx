@@ -1,17 +1,34 @@
 export default function Login() {
   return (
     <>
-      <h1>Login</h1>
-      <form>
-        <div>
-          <label htmlFor="login-email">Email</label>
-          <input id="login-email" type="email" name="email" />
-        </div>
-        <div>
-          <label htmlFor="login-password">Password</label>
-          <input id="login-password" type="password" name="password" />
-        </div>
-        <button type="button">Login</button>
+      <form className="flex justify-center items-center h-screen">
+        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
+          <legend className="fieldset-legend">Login</legend>
+
+          <label className="label" htmlFor="login-email">
+            Email
+          </label>
+          <input
+            id="login-email"
+            type="email"
+            className="input"
+            placeholder="Email"
+          />
+
+          <label className="label" htmlFor="login-password">
+            Password
+          </label>
+          <input
+            id="login-password"
+            type="password"
+            className="input"
+            placeholder="Password"
+          />
+
+          <button type="button" className="btn btn-neutral mt-4">
+            Login
+          </button>
+        </fieldset>
       </form>
     </>
   );
